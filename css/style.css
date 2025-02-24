@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur/hauteur des éléments */
+  font-family: inherit; /* Hérite de la police du parent */
+  line-height: inherit; /* Hérite de la hauteur de ligne du parent */
+  color: inherit; /* Hérite de la couleur du texte du parent */
+}
+
+body {
+  font-size: 16px; /* Taille de police de base */
+  line-height: 1.5; /* Hauteur de ligne pour une meilleure lisibilité */
+  background-image: url('../images/cercle.png');
+  color: #333; /* Couleur de texte par défaut */
+  background-color: #202222; /* Couleur de fond du body */
+  /* background-image: url('../images/body.png'); */
+  color: white;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; /* Assure que le body prend au moins toute la hauteur de la fenêtre */
+  display: flex;
+  flex-direction: column; /* Utile pour les layouts en colonne (header, main, footer) */
+}
+
+.container {
+  width: 100%; /* Prend toute la largeur disponible par défaut */
+  max-width: 90%; /* Limite la largeur à 80% de la largeur de la fenêtre */
+  margin: 0 auto; /* Centre le conteneur horizontalement */
+  padding: 0 20px; /* Ajoute un peu d'espace à gauche et à droite (optionnel) */
+}
+
+/* code css de header */
+header {
+  padding: 18px;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.head-section {
+  background-image: url('../images/body.png');
+  background-size: cover;
+}
+
+.hero {
+  padding: 30px 0;
+}
+.hero .btn {
+  background-color: #398378;
+  border: none;
+}
+.hero a {
+  font-size: 16px;
+}
+.hero span {
+  font-size: 32px;
+}
+.hero h2 {
+  font-size: 64px;
+  font-weight: 700;
+  animation: color-change 5s infinite alternate;
+}
+.p-title p {
+  width: 50%;
+}
+/* @keyframes color-change {
+  from {
+    color: #398378;
+  }
+  to {
+    color: white;
+  }
+} */
+ .green {
+  background: linear-gradient(45deg, #398378, #06725d);
+  border-radius: 8px;
+ }
+ .green h2 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  padding-bottom: 10px;
+ }
+ .green span {
+  font-size: 26px;
+  font-weight: 700;
+  text-align: center;
+ }
+ .green p {
+  font-size: 18px;
+  font-weight: 500;
+  font-style: italic;
+ }
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero-section strong {
+  color: white;
+  font-style: italic;
+}
+.hero-section p {
+  font-size: 16px;
+}
+.chiffres {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.services-section {
+  padding: 20px 0;
+}
+.card {
+  background-color: #333333a8;
+  padding: 18px;
+  color: white;
+  border: none;
+  border-radius: 16px;
+  margin-bottom: 20px; /* Espace entre les cartes */
+  transition: transform 0.8s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  background-color: #398378;
+  color: white;
+  transform: translateY(-15px); /* Légère élévation au survol */
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); 
+}
+.cards:hover {
+  background-color: #398378;
+  color: white;
+  transform: translateY(-15px); /* Légère élévation au survol */
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+.card:hover i{
+  background-color: #333333a8;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px; /* Espace sous le titre */
+}
+
+.card-text {
+  font-size: 16px;
+  color: #ccc; /* Couleur de texte secondaire */
+}
+
+.fa-pencil, .fa-code {
+  font-size: 32px;
+  color: white; /* Couleur des icônes */
+}
+.cards {
+  background-color: #333333a8;
+  padding: 18px;
+  border: none; border-radius: 16px;
+  transition: 0.8s;
+  transition: transform 0.8s ease, box-shadow 0.3s ease;
+}
+.cards a {
+  text-decoration: none;
+  color: white;
+}
+.card i {
+  background-color: #398378;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 32px;
+}
+.card h2 {
+  font-size: 24px;
+}
+.cardflex {
+  display: grid; grid-template-columns: 1fr, 1fr, 1fr;
+}
+.items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer {
+  background-color: #333333;
+}
+.button {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+}
+.button:hover{
+  color: white;
+}
+.h2 {
+  text-align: center;
+  color: white;
+}
+.p {
+  text-align: center;
+  color: white;
+}
+hr {
+  color: white;
+}
+span {
+  color: white;
+}
+.button-secondary {
+  background-color: #398378;
+}
+.button-secondary:hover {
+  color: none;
+}
+
+
+@media (max-width: 490px) {
+  .head {
+    justify-content: center; 
+    flex-direction: column; 
+    text-align: center;
+    gap: 20px;
+  }
+  .hero-section {
+    justify-content: center; 
+    flex-direction: column; 
+    text-align: center;
+    gap: 20px;
+  }
+  .hero-section h2{
+    font-size: 40px;
+  }
+  .hero-section span {
+    font-size: 28px;
+  }
+  .img-fluid {
+    width: 400px;
+  }
+  .p-title {
+    text-align: center;
+  }
+  .pied {
+    justify-content: center; 
+    flex-direction: column; 
+    text-align: center;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero-section {
+    justify-content: center; 
+    flex-direction: column; 
+    text-align: center;
+    gap: 36px;
+  }
+  .hero-section h2{
+    font-size: 50px;
+  }
+  .hero-section span {
+    font-size: 36px;
+  }
+  .img-fluid {
+    width: 500px;
+  }
+  .pied {
+    justify-content: center; 
+    flex-direction: column; 
+    text-align: center;
+    gap: 20px;
+  }
+}
+
+
