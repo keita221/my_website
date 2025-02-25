@@ -6,6 +6,9 @@
   line-height: inherit; /* Hérite de la hauteur de ligne du parent */
   color: inherit; /* Hérite de la couleur du texte du parent */
 }
+.cod {
+  font-size: 10px;
+}
 
 body {
   font-size: 16px; /* Taille de police de base */
