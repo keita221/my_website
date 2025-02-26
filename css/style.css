@@ -7,9 +7,11 @@
   color: inherit; /* Hérite de la couleur du texte du parent */
 }
 .cod {
-  font-size: 10px;
+  font-size: 20px;
 }
-
+.espace {
+  padding: 24px 0px;
+}
 body {
   font-size: 16px; /* Taille de police de base */
   line-height: 1.5; /* Hauteur de ligne pour une meilleure lisibilité */
@@ -165,6 +167,9 @@ header {
 .cards a {
   text-decoration: none;
   color: white;
+}
+.cards img {
+  border-radius: 10px;
 }
 .card i {
   background-color: #398378;
